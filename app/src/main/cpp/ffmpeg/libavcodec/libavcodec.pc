@@ -1,0 +1,14 @@
+prefix=/home/mr-li666/ffmpeg-3.4.7/android/armv7-a
+exec_prefix=${prefix}
+libdir=/home/mr-li666/ffmpeg-3.4.7/android/armv7-a/lib
+includedir=/home/mr-li666/ffmpeg-3.4.7/android/armv7-a/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.107.100
+Requires: 
+Requires.private: libavutil >= 55.78.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -lm -lz -pthread -pthread
+Cflags: -I${includedir}
